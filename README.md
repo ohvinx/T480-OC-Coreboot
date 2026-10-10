@@ -5,14 +5,13 @@ OpenCore version: **1.0.7**.
 
 ### Firmware
 
-Coreboot firmware is required here.  
-MrChromebox EDK2 is also required.  
+Coreboot  
+MrChromebox EDK2 
 
-`SecureBootModel` is disabled here.  
-MrChromebox EDK2 requires this setting.  
+`SecureBootModel` is disabled  
+as it conflicts with EDK2 
 
-`ProtectMemoryRegions` is enabled here.  
-This setup requires that setting.  
+`ProtectMemoryRegions` must be enabled in order to boot  
 
 ## macOS
 
@@ -52,23 +51,6 @@ This setup requires that setting.
 - [x] Intel Bluetooth support
 - [x] Audio codec support
 - [ ] 4K 60 Hz DisplayPort
-
-## Problems
-
-### DisplayPort
-
-4K 60 Hz output does not work.  
-See **Known Limitations** below.
-
-### MX150
-
-The NVIDIA MX150 stays disabled.  
-Intel UHD 620 remains the active GPU.
-
-### Firmware compatibility
-
-Secure Boot stays disabled here.  
-ProtectMemoryRegions stays enabled here.  
 
 ## System
 
@@ -178,18 +160,6 @@ These settings support this firmware chain.
 `-no_compat_check` bypasses compatibility checking.  
 `-igfxnotelemetryload` changes Intel telemetry loading.
 
-### Security
-
-```text
-SecureBootModel = Disabled
-```
-
-This value is required here.  
-MrChromebox EDK2 requires Secure Boot disabled.  
-
-`Vault` remains optional.  
-`ScanPolicy` is unrestricted at `0`.
-
 ### SMBIOS
 
 | Field | Value |
@@ -224,7 +194,6 @@ The MX150 remains disabled.
 - NVIDIA MX150 is disabled.
 - **4K 60 Hz over DisplayPort does not work.**
 - `SecureBootModel` is disabled.
-- MrChromebox EDK2 requires this.
 - `ProtectMemoryRegions` is enabled.
 
 ## Tested Configuration
