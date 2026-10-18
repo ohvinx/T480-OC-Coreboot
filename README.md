@@ -132,29 +132,13 @@ Its standalone `VoodooInput` remains disabled.
 ### Boot arguments
 
 ```text
--igfxnotelemetryload revpatch=sbvmm -no_compat_check
+-igfxnotelemetryload revpatch=sbvmm -no_compat_check -keepsyms=1
 ```
-
-### UEFI
-
-| Driver |
-|---|---|
-| `HfsPlus.efi` |
-| `OpenRuntime.efi` |
 
 ## Coreboot and EDK2
 
 Keep `SecureBootModel` disabled.  
 Keep `ProtectMemoryRegions` enabled.
-
-## GPU configuration
-
-Intel UHD 620 is active.  
-The MX150 remains disabled.  
-
-## Known Limitations
-
-- NVIDIA MX150 is disabled.
 
 ## EFI ACPI Summary
 
