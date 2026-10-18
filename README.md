@@ -1,7 +1,7 @@
 # OpenCore ThinkPad T480
 
 OpenCore configuration for Lenovo ThinkPad T480.  
-OpenCore version: **1.0.7**.
+OpenCore version: **1.0.8**.
 
 ### Firmware
 
@@ -13,16 +13,6 @@ as it conflicts with EDK2
 
 `ProtectMemoryRegions` must be enabled in order to boot  
 
-## macOS
-
-### macOS Tahoe
-
-## What works?
-
-### macOS
-
-- [x] macOS Tahoe
-
 ### Hardware
 
 - [x] Intel UHD Graphics 620
@@ -30,14 +20,7 @@ as it conflicts with EDK2
 - [x] NVMe support
 - [x] USB mapping
 - [x] Ethernet kext loaded
-- [x] Wi-Fi kext loaded
-- [x] Bluetooth stack loaded
-- [x] Trackpad stack loaded
-- [x] Keyboard stack loaded
-- [x] Audio kext loaded
-- [x] Battery management loaded
-- [x] Sensors kexts loaded
-- [ ] 4K 60 Hz DisplayPort
+- [x] Wi-Fi/bluetooth kext loaded
 
 ### Software
 
@@ -50,7 +33,6 @@ as it conflicts with EDK2
 - [x] Intel wireless support
 - [x] Intel Bluetooth support
 - [x] Audio codec support
-- [ ] 4K 60 Hz DisplayPort
 
 ## System
 
@@ -63,8 +45,8 @@ as it conflicts with EDK2
 | **iGPU** | Intel UHD Graphics 620 |
 | **dGPU** | NVIDIA MX150, disabled |
 | **Firmware** | Coreboot |
-| **EDK2** | MrChromebox EDK2 fork |
-| **OpenCore** | 1.0.7 |
+| **payload** | MrChromebox EDK2 fork |
+| **OpenCore** | 1.0.8 |
 | **macOS** | macOS Tahoe |
 
 ## EFI structure
@@ -145,30 +127,13 @@ Its standalone `VoodooInput` remains disabled.
 ### Booter
 
 `ProtectMemoryRegions = True` is critical.  
-This setup needs memory protection enabled.  
 
-These settings support this firmware chain.
 
 ### Boot arguments
 
 ```text
--igfxnotelemetryload revpatch=sbvmm -no_compat_check alcid=86 keepsyms=1 swd_panic=1 igfxonln=1
+-igfxnotelemetryload revpatch=sbvmm -no_compat_check
 ```
-
-`alcid=86` selects audio layout 86.  
-`igfxonln=1` affects Intel connector behavior.  
-`-no_compat_check` bypasses compatibility checking.  
-`-igfxnotelemetryload` changes Intel telemetry loading.
-
-### SMBIOS
-
-| Field | Value |
-|---|---|
-| Product | `MacBookPro15,4` |
-| Serial | `FVFCTSYBL40Y` |
-| Board Serial | `FVF910701CD00008C` |
-| UUID | `C39501A5-7523-45B4-83E7-78C308480793` |
-| ROM | `00:0D:93:67:42:06` |
 
 ### UEFI
 
@@ -176,8 +141,6 @@ These settings support this firmware chain.
 |---|---|
 | `HfsPlus.efi` |
 | `OpenRuntime.efi` |
-
-`DisableSecurityPolicy = True` is enabled.  
 
 ## Coreboot and EDK2
 
@@ -192,23 +155,6 @@ The MX150 remains disabled.
 ## Known Limitations
 
 - NVIDIA MX150 is disabled.
-- **4K 60 Hz over DisplayPort does not work.**
-- `SecureBootModel` is disabled.
-- `ProtectMemoryRegions` is enabled.
-
-## Tested Configuration
-
-| Component | Tested value |
-|---|---|
-| Laptop | Lenovo ThinkPad T480 |
-| CPU | Intel Core i5-8350U |
-| RAM | 32 GB |
-| iGPU | Intel UHD Graphics 620 |
-| dGPU | NVIDIA MX150 disabled |
-| Firmware | Coreboot |
-| EDK2 | MrChromebox EDK2 fork |
-| OpenCore | 1.0.7 |
-| macOS | Tahoe |
 
 ## EFI ACPI Summary
 
@@ -232,6 +178,4 @@ The MX150 remains disabled.
 | Sensors | `SMCSuperIO.kext` | Super I/O sensors |
 | Firmware | `HfsPlus.efi` | HFS+ access |
 | Firmware | `OpenRuntime.efi` | Runtime services |
-| Critical | `SecureBootModel` | Disabled |
-| Critical | `ProtectMemoryRegions` | True |
 | SMBIOS | `MacBookPro15,4` | Platform identity |
