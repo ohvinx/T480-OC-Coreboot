@@ -295,6 +295,23 @@
 	<dict>
 		<key>Add</key>
 		<dict>
+			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
+			<dict>
+				<key>AAPL,ig-platform-id</key>
+				<data>BwAmWQ==</data>
+				<key>device-id</key>
+				<data>FlkAAA==</data>
+				<key>enable-max-pixel-clock-override</key>
+				<data>AQAAAA==</data>
+				<key>framebuffer-con1-enable</key>
+				<data>AQAAAA==</data>
+				<key>framebuffer-con1-alldata</key>
+				<data>AQUJAAAEAADHAwAA</data>
+				<key>framebuffer-con2-enable</key>
+				<data>AQAAAA==</data>
+				<key>framebuffer-con2-alldata</key>
+				<data>AgQKAAAEAADHAwAA</data>
+			</dict>
 			<key>PciRoot(0x0)/Pci(0x1F,0x3)</key>
 			<dict>
 				<key>AAPL,slot-name</key>
@@ -311,35 +328,6 @@
 				<key>layout-id</key>
 				<integer>86</integer>
 			</dict>
-			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
-			<dict>
-				<key>AAPL,ig-platform-id</key>
-				<data>AADAhw==</data>
-				<key>AAPL,slot-name</key>
-				<string>Internal@0,2,0</string>
-				<key>device-id</key>
-				<data>FlkAAA==</data>
-				<key>device_type</key>
-				<string>VGA compatible controller</string>
-				<key>enable-hdmi-dividers-fix</key>
-				<data>AQAAAA==</data>
-				<key>framebuffer-con0-enable</key>
-				<data>AQAAAA==</data>
-				<key>framebuffer-con0-pipe</key>
-				<data>EgAAAA==</data>
-				<key>framebuffer-con1-enable</key>
-				<data>AQAAAA==</data>
-				<key>framebuffer-con1-pipe</key>
-				<data>EgAAAA==</data>
-				<key>framebuffer-con2-enable</key>
-				<data>AQAAAA==</data>
-				<key>framebuffer-con2-pipe</key>
-				<data>EgAAAA==</data>
-				<key>framebuffer-patch-enable</key>
-				<data>AQAAAA==</data>
-				<key>model</key>
-				<string>Intel HD Graphics 620</string>
-			</dict>
 		</dict>
 		<key>Delete</key>
 		<dict/>
@@ -352,24 +340,6 @@
 				<key>Arch</key>
 				<string>Any</string>
 				<key>BundlePath</key>
-				<string>IntelMausiEthernet.kext</string>
-				<key>Comment</key>
-				<string>IntelMausiEthernet.kext</string>
-				<key>Enabled</key>
-				<true/>
-				<key>ExecutablePath</key>
-				<string>Contents/MacOS/IntelMausiEthernet</string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>MinKernel</key>
-				<string></string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
-			<dict>
-				<key>Arch</key>
-				<string>Any</string>
-				<key>BundlePath</key>
 				<string>Lilu.kext</string>
 				<key>Comment</key>
 				<string>Lilu.kext</string>
@@ -377,42 +347,6 @@
 				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/Lilu</string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>MinKernel</key>
-				<string></string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
-			<dict>
-				<key>Arch</key>
-				<string>Any</string>
-				<key>BundlePath</key>
-				<string>NVMeFix.kext</string>
-				<key>Comment</key>
-				<string>NVMeFix.kext</string>
-				<key>Enabled</key>
-				<true/>
-				<key>ExecutablePath</key>
-				<string>Contents/MacOS/NVMeFix</string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>MinKernel</key>
-				<string></string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
-			<dict>
-				<key>Arch</key>
-				<string>Any</string>
-				<key>BundlePath</key>
-				<string>RestrictEvents.kext</string>
-				<key>Comment</key>
-				<string>RestrictEvents.kext</string>
-				<key>Enabled</key>
-				<true/>
-				<key>ExecutablePath</key>
-				<string>Contents/MacOS/RestrictEvents</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -442,42 +376,6 @@
 				<key>Arch</key>
 				<string>Any</string>
 				<key>BundlePath</key>
-				<string>VoodooPS2Controller.kext</string>
-				<key>Comment</key>
-				<string>VoodooPS2Controller.kext</string>
-				<key>Enabled</key>
-				<true/>
-				<key>ExecutablePath</key>
-				<string>Contents/MacOS/VoodooPS2Controller</string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>MinKernel</key>
-				<string></string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
-			<dict>
-				<key>Arch</key>
-				<string>Any</string>
-				<key>BundlePath</key>
-				<string>VoodooRMI.kext</string>
-				<key>Comment</key>
-				<string>VoodooRMI.kext</string>
-				<key>Enabled</key>
-				<true/>
-				<key>ExecutablePath</key>
-				<string>Contents/MacOS/VoodooRMI</string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>MinKernel</key>
-				<string></string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
-			<dict>
-				<key>Arch</key>
-				<string>Any</string>
-				<key>BundlePath</key>
 				<string>WhateverGreen.kext</string>
 				<key>Comment</key>
 				<string>WhateverGreen.kext</string>
@@ -496,13 +394,85 @@
 				<key>Arch</key>
 				<string>Any</string>
 				<key>BundlePath</key>
-				<string>VoodooPS2Controller.kext/Contents/PlugIns/VoodooInput.kext</string>
+				<string>NVMeFix.kext</string>
 				<key>Comment</key>
-				<string>VoodooInput.kext</string>
+				<string>NVMeFix.kext</string>
 				<key>Enabled</key>
-				<false/>
+				<true/>
 				<key>ExecutablePath</key>
-				<string>Contents/MacOS/VoodooInput</string>
+				<string>Contents/MacOS/NVMeFix</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string>IntelMausiEthernet.kext</string>
+				<key>Comment</key>
+				<string>IntelMausiEthernet.kext</string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/IntelMausiEthernet</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string>RestrictEvents.kext</string>
+				<key>Comment</key>
+				<string>RestrictEvents.kext</string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/RestrictEvents</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string>VoodooPS2Controller.kext</string>
+				<key>Comment</key>
+				<string>VoodooPS2Controller.kext</string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/VoodooPS2Controller</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string>VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Mouse.kext</string>
+				<key>Comment</key>
+				<string>VoodooPS2Mouse.kext</string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/VoodooPS2Mouse</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -532,24 +502,6 @@
 				<key>Arch</key>
 				<string>Any</string>
 				<key>BundlePath</key>
-				<string>VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Mouse.kext</string>
-				<key>Comment</key>
-				<string>VoodooPS2Mouse.kext</string>
-				<key>Enabled</key>
-				<false/>
-				<key>ExecutablePath</key>
-				<string>Contents/MacOS/VoodooPS2Mouse</string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>MinKernel</key>
-				<string></string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
-			<dict>
-				<key>Arch</key>
-				<string>Any</string>
-				<key>BundlePath</key>
 				<string>VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Trackpad.kext</string>
 				<key>Comment</key>
 				<string>VoodooPS2Trackpad.kext</string>
@@ -568,13 +520,49 @@
 				<key>Arch</key>
 				<string>Any</string>
 				<key>BundlePath</key>
-				<string>VoodooRMI.kext/Contents/PlugIns/RMII2C.kext</string>
+				<string>VoodooPS2Controller.kext/Contents/PlugIns/VoodooInput.kext</string>
 				<key>Comment</key>
-				<string>RMII2C.kext</string>
+				<string>VoodooInput.kext</string>
+				<key>Enabled</key>
+				<false/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/VoodooInput</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string>VoodooRMI.kext</string>
+				<key>Comment</key>
+				<string>VoodooRMI.kext</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
-				<string>Contents/MacOS/RMII2C</string>
+				<string>Contents/MacOS/VoodooRMI</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string>VoodooRMI.kext/Contents/PlugIns/VoodooInput.kext</string>
+				<key>Comment</key>
+				<string>VoodooInput.kext</string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/VoodooInput</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -604,13 +592,13 @@
 				<key>Arch</key>
 				<string>Any</string>
 				<key>BundlePath</key>
-				<string>VoodooRMI.kext/Contents/PlugIns/VoodooInput.kext</string>
+				<string>VoodooRMI.kext/Contents/PlugIns/RMII2C.kext</string>
 				<key>Comment</key>
-				<string>VoodooInput.kext</string>
+				<string>RMII2C.kext</string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>ExecutablePath</key>
-				<string>Contents/MacOS/VoodooInput</string>
+				<string>Contents/MacOS/RMII2C</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -748,24 +736,6 @@
 				<key>Arch</key>
 				<string>Any</string>
 				<key>BundlePath</key>
-				<string>itlwm.kext</string>
-				<key>Comment</key>
-				<string>itlwm.kext</string>
-				<key>Enabled</key>
-				<true/>
-				<key>ExecutablePath</key>
-				<string>Contents/MacOS/itlwm</string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>MinKernel</key>
-				<string></string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
-			<dict>
-				<key>Arch</key>
-				<string>Any</string>
-				<key>BundlePath</key>
 				<string>IntelBTPatcher.kext</string>
 				<key>Comment</key>
 				<string>IntelBTPatcher.kext</string>
@@ -834,9 +804,79 @@
 				<key>PlistPath</key>
 				<string>Contents/Info.plist</string>
 			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string>AirportItlwm.kext</string>
+				<key>Comment</key>
+				<string>AirportItlwm.kext</string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/AirportItlwm</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string>HibernationFixup.kext</string>
+				<key>Comment</key>
+				<string>HibernationFixup.kext</string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/HibernationFixup</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string>VoltageShift.kext</string>
+				<key>Comment</key>
+				<string>VoltageShift.kext</string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/VoltageShift</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
 		</array>
 		<key>Block</key>
 		<array>
+			<dict>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>Comment</key>
+				<string>Temporary sleep test: block Apple Thunderbolt NHI driver</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Identifier</key>
+				<string>com.apple.driver.AppleThunderboltNHI</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>Strategy</key>
+				<string>Exclude</string>
+			</dict>
 			<dict>
 				<key>Arch</key>
 				<string>Any</string>
@@ -1359,7 +1399,7 @@
 			<key>ConsoleAttributes</key>
 			<integer>0</integer>
 			<key>HibernateMode</key>
-			<string>None</string>
+			<string>Auto</string>
 			<key>HibernateSkipsPicker</key>
 			<false/>
 			<key>HideAuxiliary</key>
@@ -1390,9 +1430,9 @@
 		<key>Debug</key>
 		<dict>
 			<key>AppleDebug</key>
-			<false/>
+			<true/>
 			<key>ApplePanic</key>
-			<false/>
+			<true/>
 			<key>DisableWatchDog</key>
 			<true/>
 			<key>DisplayDelay</key>
@@ -1404,7 +1444,7 @@
 			<key>SysReport</key>
 			<false/>
 			<key>Target</key>
-			<integer>0</integer>
+			<integer>67</integer>
 		</dict>
 		<key>Entries</key>
 		<array>
@@ -1493,9 +1533,9 @@
 				<key>bluetoothInternalControllerInfo</key>
 				<data>AAAAAAAAAAAAAAAAAAA=</data>
 				<key>boot-args</key>
-				<string>-igfxnotelemetryload revpatch=sbvmm -no_compat_check alcid=86 keepsyms=1 swd_panic=1 igfxonln=1</string>
+				<string>-igfxnotelemetryload revpatch=sbvmm -no_compat_check -v hbfx-ahbm=128</string>
 				<key>csr-active-config</key>
-				<data>AwgAAA==</data>
+				<data>AAAAAA==</data>
 				<key>prev-lang:kbd</key>
 				<data>cnUtUlU6MjUy</data>
 				<key>run-efi-updater</key>
@@ -1516,7 +1556,6 @@
 			<array>
 				<string>bluetoothExternalDongleFailed</string>
 				<string>bluetoothInternalControllerInfo</string>
-				<string>csr-active-config</string>
 				<string>boot-args</string>
 				<string>ForceDisplayRotationInEFI</string>
 			</array>
